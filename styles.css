@@ -1,0 +1,121 @@
+:root {
+  --primary: #4facfe;
+  --secondary: #00f2fe;
+  --bg: #f4f6f9;
+  --card: #ffffff;
+  --border: #e0e0e0;
+
+  --food: #ff9f43;
+  --travel: #1dd1a1;
+  --shopping: #5f27cd;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+}
+
+
+.header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: -20px auto 20px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.search-container {
+  position: relative;
+}
+
+#search {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+
+.suggestions-box {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--border);
+  display: none;
+  z-index: 10;
+}
+
+.suggestions-box div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-box div:hover {
+  background: #f1f7ff;
+}
+
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 8px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:hover {
+  background: #f1f7ff;
+}
+
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+.food { background: var(--food); }
+.travel { background: var(--travel); }
+.shopping { background: var(--shopping); }
+
+
+.amount {
+  font-weight: bold;
+  color: #2e86de;
+}
+
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+}
