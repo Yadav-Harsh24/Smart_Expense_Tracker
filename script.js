@@ -75,5 +75,4 @@ document.addEventListener("DOMContentLoaded", function () {
   search.addEventListener("input", updateView);
   sort.addEventListener("change", updateView);
   category.addEventListener("change", updateView);
-
 });
